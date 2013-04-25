@@ -1,4 +1,4 @@
 shoppingapp
 ===========
 
-Shopping app
+Shopping app for Thinkful.
