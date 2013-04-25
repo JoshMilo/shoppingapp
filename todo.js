@@ -2,7 +2,7 @@ function TodoCtrl($scope) {
 
     $scope.todos = [
         {text: 'Buy Porkchops', done: false},
-        {text: 'Buy Ham Hocks', done: false}
+        {text: 'Buy Ham Hocks', done: true}
     ];
 
     $scope.addTodo = function() {
