@@ -1,4 +1,100 @@
+html {
+    margin: 0;
+}
+
+section {
+    background-color: #BDC3C7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Sunshiney', cursive;
+    font-size: 10px;
+    width: 70%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+span {
+    font-size: 2em;
+    font-family: 'Autour One', cursive;
+}
+
+.todo-li {
+    list-style-type: none;
+}
+
 .done-true {
     text-decoration: line-through;
-    color: grey;
+    color: ghostwhite;
+}
+
+form {
+    float: left;
+}
+
+input {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.btn {
+    font-size: 1.8em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    padding: 11px;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    -moz-box-shadow: 0px 10px 14px -7px #3e7327;
+    -webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+    box-shadow: 0px 10px 14px -7px #3e7327;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+    background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+    background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+    background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+    background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+    background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+    background-color:#77b55a;
+    border:1px solid #4b8f29;
+    text-shadow:0px 1px 0px #5b8a3c;
+
+}
+
+.large {
+    margin-top: 3px;
+    background: #E74C3C;
+    border:1px solid #C0392B;
+    background:linear-gradient(to bottom, #E74C3C 5%, #C0392B 100%);
+    text-shadow:0px 1px 0px #E74C3C;
+    box-shadow: 0px 10px 14px -7px #E74C3C;
+}
+
+.btn:hover {
+    color: white;
+    border: 1px solid #979797;
+    -moz-box-shadow:   inset .4px 1px 1px 0px rgba(0,0,0,0.50);
+    -webkit-box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.50);
+    box-shadow:        inset .4px .4px .4px 0px rgba(0,0,0,0.50);
+}
+
+.btn:active {
+    border-top-color: #27AE60;
+    background: #27AE60;
+}
+
+.large:active {
+    border-top-color: #C0392B;
+    background: #C0392B;
 }

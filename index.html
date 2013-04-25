@@ -8,24 +8,27 @@
 	<script src="underscore.js"></script>
 	<script src="todo.js"></script>
 	<link rel="stylesheet" href="style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Sunshiney' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1>Shopping Reminders</h1>
-    <div ng-controller="TodoCtrl">
-	    <h3>Total: {{getTotalTodos()}}</h3>
-	    <ul class="main list">
-	        <li ng-repeat="todo in todos">
-		        <input type="checkbox" ng-model="todo.done"/>
-		        <span class="done-{{todo.done}}">{{todo.text}}</span>
-	        </li>
-	    </ul>
 
-	    <form class="inputarea">
-		    <input type="text" ng-model="formTodoText" ng-model-instant/>
-	        <button class="btn" ng-click="addTodo()">Add</button>
-	    </form>
-
-	    <button class="largebtn" ng-click="deleteTodos()">Delete</button>
-    </div>
+	<section>
+		<h1>Shopping Reminders</h1>
+        <div ng-controller="TodoCtrl">
+	        <h3>Total: {{getTotalTodos()}}</h3>
+	            <ul class="todo-li">
+	                <li ng-repeat="todo in todos">
+		            <input type="checkbox" ng-model="todo.done"/>
+		            <span class="done-{{todo.done}}">{{todo.text}}</span>
+	                </li>
+	            </ul>
+	        <form class="inputarea">
+		        <input type="text" ng-model="formTodoText" ng-model-instant/>
+	            <button class="btn" ng-click="addTodo()">Add</button>
+	        </form>
+	            <button class="large btn" ng-click="deleteTodos()">Delete</button>
+        </div>
+	</section>
 </body>
 </html>
