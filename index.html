@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<title>Shop-o-licious</title>
+	<meta name="ShopApp" content="Shopping App to remember stuff">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+	<script src="underscore.js"></script>
+	<script src="todo.js"></script>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<h1>Shopping Reminders</h1>
+    <div ng-controller="TodoCtrl">
+	    <h3>Total: {{getTotalTodos()}}</h3>
+	    <ul class="main list">
+	        <li ng-repeat="todo in todos">
+		        <input type="checkbox" ng-model="todo.done"/>
+		        <span class="done-{{todo.done}}">{{todo.text}}</span>
+	        </li>
+	    </ul>
+
+	    <form class="inputarea">
+		    <input type="text" ng-model="formTodoText" ng-model-instant/>
+	        <button class="btn" ng-click="addTodo()">Add</button>
+	    </form>
+
+	    <button class="largebtn" ng-click="deleteTodos()">Delete</button>
+    </div>
+</body>
+</html>
